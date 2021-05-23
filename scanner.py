@@ -12,4 +12,4 @@ request = requests.get(location, verify=False, stream=True)
 
 name = time.strftime("%H:%M:%S") + '.pdf'
 
-scan = stream.stream_response_to_file(request, path=name)
+stream.stream_response_to_file(request, path=name)
